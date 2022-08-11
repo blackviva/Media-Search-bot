@@ -59,7 +59,9 @@ async def filter(client, message):
                     [InlineKeyboardButton(text=f"{filename}",callback_data=f"subinps#{file_id}")]
                     )
         else:
-            await client.send_sticker(chat_id=message.from_user.id, sticker='CAADBQADMwIAAtbcmFelnLaGAZhgBwI')
+            await message.reply_text(f"<b>Check Movie Name In #Google and Try, Again No Results? It's Not Available In Our Database Or Movie Not Released !
+
+Request Unavailable Movies Here @IrisRequestBot)
             return
 
         if not btn:

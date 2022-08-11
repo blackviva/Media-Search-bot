@@ -59,9 +59,7 @@ async def filter(client, message):
                     [InlineKeyboardButton(text=f"{filename}",callback_data=f"subinps#{file_id}")]
                     )
         else:
-            await message.reply_text(f"<b>Check Movie Name In #Google and Try, Again No Results? It's Not Available In Our Database Or Movie Not Released !
-
-Request Unavailable Movies Here @IrisRequestBot)
+            await message.reply_text(f"<b>Check Movie Name In #Google and Try, Again No Results? It's Not Available In Our Database Or Movie Not Released! )
             return
 
         if not btn:

@@ -288,11 +288,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                        InlineKeyboardButton('Update Channel', url='https://t.me/IrisMovies'),
-                    InlineKeyboardButton('Source Code', url='https://t.me/IrisMovies')
+                        InlineKeyboardButton('Main Channel', url='https://t.me/IrisMovies'),
+                    InlineKeyboardButton('TV/WEB Series', url='https://t.me/IrisCollectionBot')
                 ]
                 ]
-            await query.message.edit(text="Main Channle : <a href='https://t.me/IrisMovies'>Click here</a>\nSeries Channel : <a href='https://t.me/IrisCollectionBot'>IrisMovies</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text="Main Channel : <a href='https://t.me/IrisMovies'>Click here✔️</a>\nSeries Channel : <a href='https://t.me/IrisCollectionBot'>Click here✔️</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
 

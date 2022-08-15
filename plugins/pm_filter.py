@@ -292,7 +292,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('Source Code', url='https://t.me/IrisMovies')
                 ]
                 ]
-            await query.message.edit(text="Source Code : <a href='https://IrisMovies'>Click here</a>\nUpdate Channel : <a href='https://t.me/IrisMovies'>IrisMovies</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text="Main Channle : <a href='https://t.me/IrisMovies'>Click here</a>\nSeries Channel : <a href='https://t.me/IrisCollectionBot'>IrisMovies</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
 

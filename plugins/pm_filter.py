@@ -59,7 +59,7 @@ async def filter(client, message):
                     [InlineKeyboardButton(text=f"{filename}",callback_data=f"subinps#{file_id}")]
                     )
         else:
-            await message.reply_text("Check Movie Name In #Google and Try, Again No Results? It's Not Available In Our Database Or Movie Not Released !  You Can Request Movies to Upload using this bot @RequestCbot...Only Hollywood Movies!")
+            await message.reply_text("check Movie Name In #Google and Try, Again No Results? May be You asked for series...use @SeriesNetX i only have Movies. otherwise Either It's Not Available In Our Database Or Movie Not Released!  You Can Request Movies to Upload using this bot @RequestCbot...Only Hollywood Movies!")
             return
 
         if not btn:

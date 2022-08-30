@@ -67,7 +67,7 @@ async def start(bot, cmd):
                 buttons = [
                     [
                         InlineKeyboardButton('Search again', switch_inline_query_current_chat=''),
-                            InlineKeyboardButton('For TV/WEB Series', url='https://t.me/IrisCollectionBot')
+                            InlineKeyboardButton('For TV/WEB Series', url='https://t.me/SeriesNetX')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -86,7 +86,7 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🤖 Join Main Channel", url=invite_link.invite_link)
+                        InlineKeyboardButton("🤖 Join Main Channel to Continue Using Me", url=invite_link.invite_link)
                     ]
                 ]
             )
@@ -100,7 +100,7 @@ async def start(bot, cmd):
                 [
                     [
                         InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("For TV/WEB Series", url="https://t.me/IrisCollectionBot")
+                        InlineKeyboardButton("For TV/WEB Series", url="https://t.me/SeriesNetX")
                     ],
                     [
                         InlineKeyboardButton("About", callback_data="about")
@@ -195,4 +195,4 @@ async def bot_info(bot, message):
             InlineKeyboardButton('Update Channel', url='https://t.me/IrisMovies')
         ]
         ]
-    await message.reply(text="Language : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nMain Channel : <a href='https://t.me/IrisMovies'>Click here</a>\nTV/WEB Series Channel : <a href='https://t.me/IrisMovies'>Click Here</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="Language : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nMain Channel : <a href='https://t.me/IrisMovies'>Click here</a>\nTV/WEB Series Channel : <a href='https://t.me/SeriesNetX'>Click Here</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)

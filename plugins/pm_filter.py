@@ -30,7 +30,7 @@ async def filter(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+                            InlineKeyboardButton("🤖 Join Main Channel to Continue Using Me", url=invite_link.invite_link)
                         ]
                     ]
                 ),
@@ -126,7 +126,7 @@ async def group(client, message):
                 file_id = file.file_id
                 filename = f"[{get_size(file.file_size)}] {file.file_name}"
                 btn.append(
-                    [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=subinps_-_-_-_{file_id}")]
+                    [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=IrisMovies_-_-_-_{file_id}")]
                 )
         else:
             return
@@ -289,10 +289,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             buttons = [
                 [
                         InlineKeyboardButton('Main Channel', url='https://t.me/IrisMovies'),
-                    InlineKeyboardButton('TV/WEB Series', url='https://t.me/IrisCollectionBot')
+                    InlineKeyboardButton('TV/WEB Series', url='https://t.me/SeriesNetX')
                 ]
                 ]
-            await query.message.edit(text="Main Channel : <a href='https://t.me/IrisMovies'>Click here✔️</a>\nSeries Channel : <a href='https://t.me/IrisCollectionBot'>Click here✔️</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text="Main Channel : <a href='https://t.me/IrisMovies'>Click here✔️</a>\nSeries Channel : <a href='https://t.me/SeriesNetX'>Click here✔️</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
 
@@ -313,8 +313,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('Main Channel', url='https://t.me/IrisMovies'),
-                        InlineKeyboardButton('TV/WEB series', url='https://t.me/IrisCollectionBot')
+                        InlineKeyboardButton('Updates Channel', url='https://t.me/IrisMovies'),
+                        InlineKeyboardButton('TV/WEB series', url='https://t.me/SeriesNetX')
                     ]
                     ]
                 
@@ -345,8 +345,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{title}"
                 buttons = [
                     [
-                        InlineKeyboardButton('Main Channel', url='https://t.me/IrisMovies'),
-                        InlineKeyboardButton('TV/WEB series', url='https://t.me/IrisCollectionBot')
+                        InlineKeyboardButton('Updates Channel', url='https://t.me/IrisMovies'),
+                        InlineKeyboardButton('TV/WEB series', url='https://t.me/SeriesNetX')
                     ]
                     ]
                 

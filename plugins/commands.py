@@ -27,7 +27,7 @@ async def start(bot, cmd):
                 ident, file_id = cmd.text.split("_-_-_-_")
                 await bot.send_message(
                     chat_id=cmd.from_user.id,
-                    text="**Please Join My Main Channel to use this Bot!**",
+                    text="**Please Join My Main Channel to use this Bot! Join @IrisMovies and try again**",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
@@ -82,11 +82,11 @@ async def start(bot, cmd):
         invite_link = await bot.create_chat_invite_link(int(AUTH_CHANNEL))
         await bot.send_message(
             chat_id=cmd.from_user.id,
-            text="**Please Join My Main Channel to use this Bot!**",
+            text="**Please Join My Main Channel to use this Bot! Join @IrisMovies and try again**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🤖 Join Main Channel to Continue Using Me", url=invite_link.invite_link)
+                        InlineKeyboardButton("Join", url=invite_link.invite_link)
                     ]
                 ]
             )
